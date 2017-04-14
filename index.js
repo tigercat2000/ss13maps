@@ -17,6 +17,18 @@ var mapOptions = {
 	"SEV Torch": "deepzoom/torch_multi.xml"
 }
 
+var getUrlParameter = function getUrlParameter(sParam) {
+	var sPageUrl = decodeURIComponent(window.location.search.substring(1));
+	var sUrlVariables = sPageUrl.split("&");
+	
+	for (var i = 0; i < sUrlVariables.length; i++) {
+		var sParameterName = sUrlVariables[i].split("=");
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? false : sParameterName[1];
+		}
+	}
+}
+
 $(document).ready(function () {
 
 	var newHtml = "";
@@ -33,6 +45,12 @@ $(document).ready(function () {
 			$("#openNewMapDropdown").addClass("unhidden");
 		}
 	});
+
+	var mapUrl = getUrlParameter("map");
+	if (mapUrl && mapOptions.hasOwnProperty(mapUrl)) {
+		openMap(mapUrl);
+	}
+
 });
 
 
