@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SEV Torch Map Viewer</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<!-- Body -->
+<header class="flexHeader">
+	<a id="openNewMap" unselectable="on" class="unselectable">Open</a>
+	<div class="dropdown">
+		<div id="openNewMapDropdown" class="dropdown-menu"></div>	
+	</div>
+	<a id="os_zoomIn" unselectable="on" class="unselectable">Zoom In</a>
+	<a id="os_zoomOut" unselectable="on" class="unselectable">Zoom Out</a>
+	<a id="os_home" unselectable="on" class="unselectable">Center</a>
+</header>
+<div id="openseadragon1"></div>
+
+<!-- Scripts -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/openseadragon/built-openseadragon/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

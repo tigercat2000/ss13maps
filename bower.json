@@ -1,0 +1,25 @@
+{
+  "name": "ss13maps",
+  "description": "Deepzoom SS13 Map Viewer",
+  "main": "index.html",
+  "keywords": [
+    "ss13"
+  ],
+  "authors": [
+    "Tigercat2000"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "openseadragon": "^2.2.1",
+    "jquery": "^3.2.1"
+  }
+}

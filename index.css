@@ -1,0 +1,64 @@
+html, body {
+	background: #0f0f0f;
+	margin: 0;
+	height: 100%;
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.flexHeader {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flexHeader a {
+	background-color: #0a0a0a;
+	color: #fa9a9a;
+	cursor: pointer;
+	padding: 0 1.5% 0 1.5%;
+}
+
+.flexHeader a:hover {
+	background-color: #4a0a0a;
+	color: #ff9a9a;
+}
+
+#openseadragon1 {
+	height: 100%;
+	width: 100%;
+}
+
+/* Dropdowns */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.unhidden {
+	display: block;
+}
+
+#selectMapOption {
+	cursor: pointer;
+}
+
+#selectMapOption:hover {
+	background: #000;
+	color: #fff;
+}
