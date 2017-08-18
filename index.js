@@ -13,6 +13,7 @@ var OSViewer = OpenSeadragon({
 
 // associative list of map names to their files
 var mapOptions = {
+	"DeltaStation": "deepzoom/deltastation.xml",
 	"OmegaStation": "deepzoom/omegastation.xml",
 	"SEV Torch": "deepzoom/torch_multi.xml"
 }
